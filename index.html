@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tip Calculator</title>
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link type="text/css" rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="main-container">
+            <header>
+                <h1 class="title">Tip Calculator</h1> 
+            </header>
+            <div class="input-container">
+                <form name="my-form" id="my-form">
+                    <div class="form-div">
+                        <label for="total-amount">Total After Tax:</label>
+                        <input type="number" name="total-amount" id="total-amount">
+                    </div>
+                    <div class="form-div">
+                        <label for="service-rating">Desired Tip? (%)</label>
+                        <input type="number" name="service-rating" id="service-rating"> 
+                    </div>
+                    <div class="form-div">
+                        <label for="split">How Many Paying?</label>
+                        <input type="number" name="split" id="split">
+                    </div>
+                    <div class="button-div">
+                        <button type="submit" id="submit">Submit:</button>
+                        <button type="reset" id="reset">Re-do:</button>
+                    </div>
+                    
+                </form> 
+            </div>
+            <div class="result-container hidden" id="hidden">
+                <h3 class="result-text">An Approriate Tip Would Be:</h3>
+                <h2 class="output-text" id="output-text"></h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
